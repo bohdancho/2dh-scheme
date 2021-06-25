@@ -1,0 +1,16 @@
+@import 'reset';
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('../fonts/Bahnschrift.woff2');
+}
+
+body {
+  font-family: 'Bahnschrift', sans-serif;
+  background-color: wheat;
+  color: black;
+}
+
+:focus, button:focus {
+  outline: none;
+}
