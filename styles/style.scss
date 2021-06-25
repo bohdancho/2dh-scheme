@@ -34,29 +34,16 @@ button {
 
 .nav-btn {
   margin-right: 15px;
-  height: 16px;
   border: none;
   background: none;
   span {
     width: 28px;
     height: 3px;
-    position: relative;
-    &, &::before, &::after {
-      display: block;
-      background: #fff;
-      border-radius: 2px;
-    }
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-    &::before {
-      transform: translateY(-6px);
-    }
-    &::after {
-      transform: translateY(6px);
+    display: block;
+    background: #fff;
+    border-radius: 2px;
+    &:not(:last-child) {
+      margin-bottom: 3px;
     }
   }
 }

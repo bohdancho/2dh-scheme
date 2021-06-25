@@ -87,7 +87,6 @@ button {
 
 .nav-btn {
   margin-right: 15px;
-  height: 16px;
   border: none;
   background: none;
 }
@@ -95,28 +94,11 @@ button {
 .nav-btn span {
   width: 28px;
   height: 3px;
-  position: relative;
-}
-
-.nav-btn span, .nav-btn span::before, .nav-btn span::after {
   display: block;
   background: #fff;
   border-radius: 2px;
 }
 
-.nav-btn span::before, .nav-btn span::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.nav-btn span::before {
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
-}
-
-.nav-btn span::after {
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+.nav-btn span:not(:last-child) {
+  margin-bottom: 3px;
 }
