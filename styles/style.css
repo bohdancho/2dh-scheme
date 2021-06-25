@@ -71,6 +71,33 @@ button {
   margin: 0 20px;
 }
 
+.title {
+  padding: 4px 30px;
+  font-size: 1em;
+  color: #1A1736;
+  position: relative;
+}
+
+.title:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #1A1736;
+  height: 8px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.title__span {
+  padding: 0 5px;
+  background: #A3C2D1;
+  z-index: 1;
+  position: relative;
+}
+
 .header {
   padding: 8px 0;
   background-color: #1A1736;
@@ -87,6 +114,7 @@ button {
 
 .nav-btn {
   margin-right: 15px;
+  padding: 0;
   border: none;
   background: none;
 }
@@ -101,4 +129,77 @@ button {
 
 .nav-btn span:not(:last-child) {
   margin-bottom: 3px;
+}
+
+.general-scheme__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.general-scheme__img-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.general-scheme__img {
+  width: 100%;
+  display: block;
+}
+
+.abbrs-list {
+  padding: 10px 0;
+  background-color: #1A1736;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.abbrs-list__item {
+  font-size: 1.5em;
+  font-family: inherit;
+  padding: 10px 25px 10px 10px;
+  display: block;
+  background: none;
+  border: none;
+  color: #fff;
+  position: relative;
+}
+
+.abbrs-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.abbrs-list__item:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  width: calc(100% - 30px);
+  height: 3px;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.abbrs-list__item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: url(../img/right-arrow.svg) center center no-repeat;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 5px;
 }

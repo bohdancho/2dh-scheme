@@ -23,6 +23,30 @@ button {
   margin: 0 20px;
 }
 
+.title {
+  padding: 4px 30px;
+  font-size: 1em;
+  color: #1A1736;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #1A1736;
+    height: 8px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__span {
+    padding: 0 5px;
+    background: #A3C2D1;
+    z-index: 1;
+    position: relative;
+  }
+}
+
 .header {
   padding: 8px 0;
   background-color: #1A1736;
@@ -34,6 +58,7 @@ button {
 
 .nav-btn {
   margin-right: 15px;
+  padding: 0;
   border: none;
   background: none;
   span {
@@ -44,6 +69,62 @@ button {
     border-radius: 2px;
     &:not(:last-child) {
       margin-bottom: 3px;
+    }
+  }
+}
+
+.general-scheme {
+  &__content {
+    display: flex;
+  }
+  &__img-wrapper {
+    flex: 1;
+  }
+  &__img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.abbrs-list {
+  padding: 10px 0;
+  background-color: #1A1736;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__item {
+    font-size: 1.5em;
+    font-family: inherit;
+    padding: 10px 25px 10px 10px;
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        width: calc(100% - 30px);
+        height: 3px;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      background: url(../img/right-arrow.svg) center center no-repeat;
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 5px;
     }
   }
 }
