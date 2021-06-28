@@ -2,42 +2,364 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Цифровой двойник газохимической установки</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <button class="nav-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <h1 class="header__title">Цифровой двойник газохимической установки</h1>
-        </div>
-    </div>
-</header>
-<main>
-    <div class="general-scheme">
-        <h2 class="title"><span class="title__span">Общая схема</span></h2>
+<div class="wrapper">
+    <header class="header">
         <div class="container">
-            <div class="general-scheme__content">
-                <div class="abbrs-list">
-                    <button class="abbrs-list__item abbr-item">ВДС</button>
-                    <button class="abbrs-list__item abbr-item">ДВК</button>
-                    <button class="abbrs-list__item abbr-item">ДМП</button>
-                    <button class="abbrs-list__item abbr-item">ДСВ</button>
-                    <button class="abbrs-list__item abbr-item">ДОМ</button>
-                </div>
-                <div class="general-scheme__img-wrapper">
-                    <img src="/img/general-scheme.jpg" alt="Главная Схема" class="general-scheme__img">
-                    <button class="abbr-item general-scheme__img-abbr">ГП</button>
+            <div class="header__inner">
+                <button class="nav-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h1 class="header__title">Цифровой двойник газохимической установки</h1>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="general-scheme">
+            <h2 class="title"><span class="title__span">Общая схема</span></h2>
+            <div class="container">
+                <div class="general-scheme__content">
+                    <div class="abbrs-list">
+                        <button class="abbrs-list__item abbr-item">ВДС</button>
+                        <button class="abbrs-list__item abbr-item">ДВК</button>
+                        <button class="abbrs-list__item abbr-item">ДМП</button>
+                        <button class="abbrs-list__item abbr-item">ДСВ</button>
+                        <button class="abbrs-list__item abbr-item">ДОМ</button>
+                    </div>
+                    <div class="general-scheme__img-container">
+                        <div class="general-scheme__img-wrapper">
+                            <img src="img/general-scheme.jpg" alt="Главная Схема" class="general-scheme__img">
+                            <svg class="general-scheme__img-svg" viewBox="0 0 492.12499 127">
+                                <!-- processes -->
+                                <path class="svg-path-btn js-process-btn" data-name="Сепарация" data-text="Блок подготовки сырья"
+                                    d="m 49.04913,14.529603 c 0,0 0.890524,-4.007358 3.890184,-4.030793 2.999658,-0.02343 27.09068,0.04687 27.09068,0.04687 0,0 3.72614,0.843654 3.679269,4.288577 -0.04687,3.444922 -3.44492,4.40575 -3.44492,4.40575 l -27.442205,0.117174 c 0,0 -3.796445,-0.890524 -3.773008,-4.827578 z"
+                                    />
+                                <path class="svg-path-btn js-process-btn" data-name="Очистка" data-text="Блок очистки сырья от H2O"
+                                    d="m 64.34545,26.262442 c 0,0 0.711874,-4.11225 3.109785,-4.136299 2.397902,-0.02404 21.656116,0.0481 21.656116,0.0481 0,0 2.978651,0.865737 2.941184,4.400831 -0.03752,3.535092 -2.753848,4.52107 -2.753848,4.52107 l -21.937119,0.120241 c 0,0 -3.034861,-0.913833 -3.016118,-4.95394 z"
+                                    />
+                                <path class="svg-path-btn js-process-btn" data-name="Синтез газа" data-text="Блок синтез газа"
+                                    d="m 121.20521,108.75472 c 0,0 0.95353,-3.94742 4.16544,-3.97051 3.2119,-0.023 29.00754,0.0462 29.00754,0.0462 0,0 3.98979,0.83104 3.93961,4.22443 -0.0502,3.3934 -3.68868,4.33986 -3.68868,4.33986 l -29.38393,0.11541 c 0,0 -4.06508,-0.8772 -4.03998,-4.75536 z"
+                                    />
+                                <path class="svg-path-btn js-process-btn" data-name="Охлаждение" data-text="Блок охлаждения сырья"
+                                    d="m 171.55464,12.872708 c 0,0 1.03623,-4.1980819 4.52669,-4.2226323 3.49047,-0.024545 31.5233,0.049101 31.5233,0.049101 0,0 4.33582,0.8838062 4.28128,4.4926843 -0.0546,3.608877 -4.00858,4.615434 -4.00858,4.615434 l -31.93234,0.122751 c 0,0 -4.41763,-0.932907 -4.39035,-5.057338 z"
+                                    />
+                                <path class="svg-path-btn js-process-btn" data-name="Синтез метанола" data-text="Блок синтез метанола"
+                                    d="m 222.91224,14.060907 c 0,0 0.14061,-4.3588816 4.40575,-4.3588816 4.26514,0 42.18273,0 42.18273,0 0,0 3.65582,0.5624366 3.60897,4.3120116 -0.0469,3.749575 -3.46837,4.49949 -3.46837,4.49949 l -43.21385,-0.04687 c 0,0 -3.5621,-1.546699 -3.51523,-4.40575 z"
+                                    />
+                                <path class="svg-path-btn js-process-btn" data-name="Отделение примесей" data-text="Блок отделения примесей из сырья"
+                                    d="m 335.75918,7.5344887 c 0,0 0.17956,-4.6834792 5.62627,-4.6834792 5.44669,0 53.86853,0 53.86853,0 0,0 4.66858,0.6043202 4.60876,4.6331189 -0.0599,4.0287976 -4.42921,4.8345576 -4.42921,4.8345576 l -55.1853,-0.05036 c 0,0 -4.5489,-1.661877 -4.48905,-4.7338363 z"
+                                    />
+                                <path class="svg-path-btn js-process-btn" data-name="Утилизация" data-text="Блок утилизации и очистки отработки"
+                                    d="m 335.93628,41.42642 c 0,0 0.996,-3.859017 4.35093,-3.881584 3.35495,-0.02256 30.29933,0.04513 30.29933,0.04513 0,0 4.16747,0.812424 4.11505,4.129826 -0.0525,3.3174 -3.85294,4.242661 -3.85294,4.242661 l -30.69248,0.112837 c 0,0 -4.24611,-0.857559 -4.21989,-4.648874 z"
+                                    />
+                                <path class="svg-path-btn js-process-btn" data-name="Горение" data-text="Блок сжигания газа"
+                                    d="m 415.96663,15.45202 c 0,0 0.77216,-4.11225 3.37314,-4.136299 2.60097,-0.02404 23.49008,0.0481 23.49008,0.0481 0,0 3.2309,0.865737 3.19026,4.400831 -0.0407,3.535092 -2.98706,4.52107 -2.98706,4.52107 l -23.79488,0.120241 c 0,0 -3.29187,-0.913833 -3.27154,-4.95394 z"
+                                    />
+                                <path class="svg-path-btn js-process-btn" data-name="Дистилляция" data-text="Блок дистилляции сырья"
+                                    d="m 415.31174,36.339658 c 0,0 0.98877,-4.198082 4.31937,-4.222632 3.33061,-0.02454 30.07953,0.0491 30.07953,0.0491 0,0 4.13724,0.883806 4.0852,4.492684 -0.0521,3.608877 -3.82499,4.615434 -3.82499,4.615434 l -30.46983,0.122751 c 0,0 -4.21531,-0.932907 -4.18928,-5.057337 z"
+                                    />
+
+                                <!-- squares -->
+                                <path class="svg-path-btn"
+                                    d="m 49.951369,61.317271 c 0,0 0.632744,-2.109136 1.90994,-2.144289 1.2772,-0.03515 4.862732,0.01172 4.862732,0.01172 0,0 2.144287,0.503852 2.179439,1.991964 0.03515,1.488111 0.02344,4.956468 0.02344,4.956468 0,0 -0.855374,1.886506 -2.015397,1.90994 -1.160026,0.02344 -5.00334,0.03515 -5.00334,0.03515 0,0 -1.921658,-0.714761 -1.945092,-1.898221 -0.02344,-1.18346 -0.01172,-4.862729 -0.01172,-4.862729 z"
+                                    />
+                                <path class="svg-path-btn"
+                                    d="m 106.31644,61.953923 c 0,0 0.63274,-2.109136 1.90994,-2.144289 1.2772,-0.03515 4.86273,0.01172 4.86273,0.01172 0,0 2.14429,0.503852 2.17944,1.991964 0.0352,1.488111 0.0234,4.956468 0.0234,4.956468 0,0 -0.85537,1.886506 -2.0154,1.90994 -1.16002,0.02344 -5.00334,0.03515 -5.00334,0.03515 0,0 -1.92165,-0.714761 -1.94509,-1.898221 -0.0234,-1.18346 -0.0117,-4.862729 -0.0117,-4.862729 z"
+                                    />
+                                <path class="svg-path-btn"
+                                    d="m 160.39358,62.059725 c 0,0 0.63274,-2.109136 1.90994,-2.144289 1.2772,-0.03515 4.86273,0.01172 4.86273,0.01172 0,0 2.14429,0.503852 2.17944,1.991964 0.0351,1.488111 0.0234,4.956468 0.0234,4.956468 0,0 -0.85537,1.886506 -2.0154,1.90994 -1.16002,0.02344 -5.00334,0.03515 -5.00334,0.03515 0,0 -1.92166,-0.714761 -1.94509,-1.898221 -0.0234,-1.18346 -0.0117,-4.862729 -0.0117,-4.862729 z"
+                                    /> 
+                                <path class="svg-path-btn"
+                                    d="m 215.28473,62.472114 c 0,0 0.63274,-2.109136 1.90994,-2.144289 1.2772,-0.03515 4.86273,0.01172 4.86273,0.01172 0,0 2.14429,0.503852 2.17944,1.991964 0.0351,1.488111 0.0234,4.956468 0.0234,4.956468 0,0 -0.85537,1.886506 -2.0154,1.90994 -1.16002,0.02344 -5.00334,0.03515 -5.00334,0.03515 0,0 -1.92166,-0.714761 -1.94509,-1.898221 -0.0234,-1.18346 -0.0117,-4.862729 -0.0117,-4.862729 z"
+                                    />
+                                <path class="svg-path-btn"
+                                    d="m 276.49654,63.94851 c 0,0 0.63274,-2.109136 1.90994,-2.144289 1.2772,-0.03515 4.86273,0.01172 4.86273,0.01172 0,0 2.14429,0.503852 2.17944,1.991964 0.0351,1.488111 0.0234,4.956468 0.0234,4.956468 0,0 -0.85537,1.886506 -2.0154,1.90994 -1.16002,0.02344 -5.00334,0.03515 -5.00334,0.03515 0,0 -1.92166,-0.714761 -1.94509,-1.898221 -0.0234,-1.18346 -0.0117,-4.862729 -0.0117,-4.862729 z"
+                                    />
+                                <path class="svg-path-btn"
+                                    d="m 329.58285,64.412798 c 0,0 0.63274,-2.109136 1.90994,-2.144289 1.2772,-0.03515 4.86273,0.01172 4.86273,0.01172 0,0 2.14429,0.503852 2.17944,1.991964 0.0351,1.488111 0.0234,4.956468 0.0234,4.956468 0,0 -0.85537,1.886506 -2.0154,1.90994 -1.16002,0.02344 -5.00334,0.03515 -5.00334,0.03515 0,0 -1.92165,-0.714761 -1.94509,-1.898221 -0.0234,-1.18346 -0.0117,-4.862729 -0.0117,-4.862729 z"
+                                    />
+                                <path class="svg-path-btn"
+                                    d="m 405.70974,63.617393 c 0,0 0.63274,-2.109136 1.90994,-2.144289 1.2772,-0.03515 4.86273,0.01172 4.86273,0.01172 0,0 2.14429,0.503852 2.17944,1.991964 0.0351,1.488111 0.0234,4.956468 0.0234,4.956468 0,0 -0.85537,1.886506 -2.0154,1.90994 -1.16002,0.02344 -5.00334,0.03515 -5.00334,0.03515 0,0 -1.92166,-0.714761 -1.94509,-1.898221 -0.0234,-1.18346 -0.0117,-4.862729 -0.0117,-4.862729 z"
+                                    />
+                            </svg>                          
+                        </div>
+                        <button class="abbr-item general-scheme__img-abbr">ГП</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+        <div class="info">
+            <div class="calculator">
+                <h2 class="title"><span class="title__span">Расчет данных</span></h2>
+                <div class="calculator__content-row">
+                    <div class="calculator__content-item">
+                        <div class="calculator__content-item-inner">
+                            <div class="calculator__text-item calculator__text-small">Установка в целом</div>
+                            <div class="calculator__text-item calculator__text-small">Входной параметр</div>
+                            <div class="calculator__item-row calculator__text-item">
+                                <div class="calculator__text-small">Расход сырьевого газа. нм3/ч</div>
+                                <select class="calculator__select">
+                                    <option>800</option>
+                                    <option>900</option>
+                                    <option>1000</option>
+                                    <option>1100</option>
+                                    <option>1200</option>
+                                    <option>1300</option>
+                                    <option>1400</option>
+                                    <option>1500</option>
+                                    <option>1600</option>
+                                    <option>1700</option>
+                                </select>
+                            </div>
+                            <div class="calculator__text-item calculator__text-small">Содержание %об</div>
+                            <div class="calculator__item-row calculator__text-item">
+                                <div class="calculator__text-small">Метан</div>
+                                <select class="calculator__select">
+                                    <option>50</option>
+                                    <option>55</option>
+                                    <option>60</option>
+                                    <option>65</option>
+                                    <option>70</option>
+                                    <option>75</option>
+                                    <option>80</option>
+                                    <option>85</option>
+                                    <option>90</option>
+                                    <option>95</option>
+                                </select>
+                            </div>
+                            <div class="calculator__item-row calculator__text-item">
+                                <div class="calculator__text-small">Этан</div>
+                                <select class="calculator__select">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>8</option>
+                                    <option>10</option>
+                                    <option>12</option>
+                                    <option>14</option>
+                                </select>
+                            </div>
+                            <div class="calculator__item-row calculator__text-item">
+                                <div class="calculator__text-small">Азот</div>
+                                <select class="calculator__select">
+                                    <option>0</option>
+                                    <option>0.5</option>
+                                    <option>1</option>
+                                    <option>1.5</option>
+                                    <option>2</option>
+                                    <option>2.5</option>
+                                    <option>3</option>
+                                    <option>3.5</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="calculator__btn accent-btn">Запуск расчетов</button>
+                    </div>
+                    <div class="calculator__content-item">
+                        <div class="calculator__content-item-inner">
+                            <div class="calculator__text-item calculator__text-small">Получены результаты:</div>
+                            <div class="calculator__text-item calculator__text-small">Производительность по метанолу. кг/ч</div>
+                            <div class="info-number-big calculator__text-item">1269</div>
+                            <div class="calculator__text-item calculator__text-small">Содержание метанола в продукте в %</div>
+                            <div class="info-number-big calculator__text-item">0. 9839</div>
+                        </div>
+                        <button class="calculator__btn accent-btn">Полный отчет</button>
+                    </div>
+                </div>
+            </div>
+            <div class="detailed-data">
+                <h2 class="title"><span class="title__span">Детализированные данные</span></h2>
+                <div class="detailed-data__content">
+                    <div class="detailed-data__info">
+                        <div class="detailed-data__scheme-block">
+                            <h3 class="detailed-data__scheme-title detailed-data-title js-detailed-data-title">Блок синтеза метанола</h3>
+                            <div class="detailed-data__scheme-wrapper">
+                                <img class="detailed-data__scheme" src="img/mini-scheme.jpg">
+                                <svg viewBox="0 0 230.18749 210.07917" class="detailed-data__scheme-svg">
+                                    <path class="svg-path-btn"
+                                        d="m 39.693784,172.54149 c 0,0 2.379603,-2.54416 4.997166,0 2.617565,2.54418 13.373373,13.23906 13.373373,13.23906 0,0 2.189235,2.12013 0.761472,3.76912 -1.427761,1.649 -14.467989,14.32269 -14.467989,14.32269 0,0 -1.998868,2.21436 -4.14051,0.0942 -2.141642,-2.12013 -14.801134,-14.65249 -14.801134,-14.65249 0,0 -0.914124,-1.66834 0.951445,-3.51518 1.865572,-1.84681 13.326177,-13.25742 13.326177,-13.25742 z"
+                                        />
+                                    <path class="svg-path-btn"
+                                        d="m 80.580866,154.95828 c 0,0 1.653646,-1.78594 3.472656,0 1.819011,1.78594 9.29349,9.29349 9.29349,9.29349 0,0 1.521354,1.48828 0.529166,2.64583 -0.992187,1.15756 -10.054166,10.05417 -10.054166,10.05417 0,0 -1.389063,1.55443 -2.877344,0.0661 -1.488281,-1.48828 -10.285677,-10.28568 -10.285677,-10.28568 0,0 -0.635248,-1.17113 0.661183,-2.46757 1.296432,-1.29643 9.260692,-9.30639 9.260692,-9.30639 z"
+                                        />
+                                    <path class="svg-path-btn"
+                                        d="m 29.36875,12.270052 c 0,0 1.5875,-2.9765625 3.141927,-2.9765625 1.554427,0 19.645312,0 19.645312,0 0,0 2.778125,1.1906245 2.811198,2.8111975 0.03307,1.620573 0,20.439063 0,20.439063 0,0 -0.892969,2.38125 -2.447396,2.38125 -1.554427,0 -20.472135,0 -20.472135,0 0,0 -2.66237,-1.422136 -2.66237,-2.66237 0,-1.240235 -0.01654,-19.992578 -0.01654,-19.992578 z"
+                                        />
+                                    <path class="svg-path-btn"
+                                        d="m 80.499478,41.969531 c 0,0 1.653646,-1.785938 3.472656,0 1.819011,1.785937 9.29349,9.293489 9.29349,9.293489 0,0 1.521354,1.488281 0.529166,2.645833 -0.992187,1.157553 -10.054166,10.054167 -10.054166,10.054167 0,0 -1.389063,1.554427 -2.877344,0.06615 -1.488281,-1.488281 -10.285677,-10.285677 -10.285677,-10.285677 0,0 -0.635248,-1.171136 0.661183,-2.467568 1.296432,-1.296432 9.260692,-9.30639 9.260692,-9.30639 z"
+                                        />
+                                    <path class="svg-path-btn"
+                                        d="M 57.811458,76.530728 84.382511,91.871534 V 122.43594 L 57.915621,137.7166 31.374492,122.39307 V 91.673446 Z"
+                                        />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="detailed-data__buttons">
+                            <button class="detailed-data__button accent-btn">
+                                Описание. Материалы. 
+                            </button>
+                            <button class="detailed-data__button accent-btn">
+                                Проектная документация
+                            </button>
+                            <button class="detailed-data__button accent-btn">
+                                Техническая документация
+                            </button>
+                            <button class="detailed-data__button accent-btn">
+                                Данные расчетов
+                            </button>
+                            <button class="detailed-data__button accent-btn">
+                                Технические регламенты
+                            </button>
+                            <button class="detailed-data__button accent-btn">
+                                Данные цифровых моделей
+                            </button>
+                            <button class="detailed-data__button accent-btn">
+                                Дополнительная документация
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detailed-data__params params">
+                        <h3 class="detailed-data-title params__title">
+                            Параметры синтеза метанола
+                        </h3>
+                        <div class="params__item">
+                            <div class="params__text">
+                                Давление синтез-газа
+                                на входе в блок
+                                МПа (абс)
+                            </div>
+                            <div class="info-number-big">
+                                5.11
+                            </div>
+                        </div>
+                        <div class="params__item">
+                            <div class="params__text">
+                                Температура в реакторе, С
+                            </div>
+                            <div class="info-number-big">
+                                250
+                            </div>
+                        </div>
+                        <div class="params__item">
+                            <div class="params__text">
+                                Кратность циркуляции
+                                в контуре реакторе
+                                Р-202
+                            </div>
+                            <div class="info-number-big">
+                                30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="docs">
+                <div class="title docs__line-title"></div>
+                <div class="docs__content">
+                    <div class="docs__heading">
+                        <img src="img/logo-light.svg" alt="2dh гиперкуб цифровых данных" class="docs__logo">
+                        <h3 class="docs__title">Библиотека верифицированных документов</h3>
+                    </div>
+                    <div class="docs__list-wrapper">
+                        <div class="docs__list">
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div>
+                            <div class="docs__item">
+                                <div class="docs__item-text">
+                                    Название материала краткое описание
+                                </div>
+                                <div class="docs__item-date">
+                                    23.06.21
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 <script src="js/script.js"></script>
 </body>
 </html>
